@@ -7,8 +7,7 @@ header{
     // position: fixed;
     // top: 0;
     // z-index: 99999;
-    backdrop-filter: blur(5px);
- 
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
     .nav{
         height: 68px;
         display: flex;
@@ -22,7 +21,10 @@ header{
             display: flex;
             align-items: center;
             justify-content: space-between;
-            column-gap: 48px;
+            column-gap: 24px;
+        }
+        &__line{
+            color: #F3F4F6;
         }
         &__list{
             display: flex;
@@ -40,6 +42,9 @@ header{
             display: flex;
             align-items: center;
             column-gap: 16px;
+            &--text{
+                display: none;
+            }
             &--dark{
                 font-size: 20px;
                 width: 36px;
@@ -75,5 +80,211 @@ header{
             }
         }
 
+        .menu{
+            display: none;
+        }
+        .close-menu{
+            display: none;
+        }
     }
+}
+
+
+@media only screen and (max-width: 700px) {
+    header{
+        // width: 100%;
+        // position: fixed;
+        // top: 0;
+        // z-index: 99999;
+        box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+        .nav{
+            height: 68px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            &__logo{
+                font-family: BlackChancery;
+                font-size: 24px;
+            }
+            &__link{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                column-gap: 16px;
+            }
+            &__line{
+                color: #F3F4F6;
+            }
+            &__list{
+                display: flex;
+                align-items: center;
+                column-gap: 16px;
+                &--item{
+                    font-family: InterMedium;
+                    font-size: 14px;
+                    &:hover{
+                        color: silver;
+                    }
+                }
+            }
+            &__btn{
+                display: flex;
+                align-items: center;
+                column-gap: 10px;
+                &--text{
+                    display: none;
+                }
+                &--dark{
+                    font-size: 20px;
+                    width: 36px;
+                    height: 36px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    cursor: pointer;
+                    border: 1px solid transparent;
+                    border-radius: 10px;
+                    &:hover{
+                        
+                        background-color: #ece7e7;
+                    }
+                }
+                &--download{
+                    font-family: InterMedium;
+                    font-size: 14px;
+                    color: white;
+                    width: 136px;
+                    height: 36px;
+                    background-color: black;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 16px;
+                    transition: all 0.3s ease;
+                    &:hover{
+                        background-color: transparent;
+                        color: #000;
+                        border: 1px solid #000;
+                    }
+                }
+            }
+    
+            .menu{
+                display: none;
+            }
+        }
+    }
+    
+}
+
+@media only screen and (max-width: 576px)  {
+
+    header{
+        // width: 100%;
+        // position: fixed;
+        // top: 0;
+        // z-index: 99999;
+        position: relative;
+        box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+        .nav{
+            height: 68px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+         
+            &__logo{
+                font-family: BlackChancery;
+                font-size: 24px;
+            }
+            &__line{
+                display: none;
+            }
+            &__link{
+                width: 100%;
+                padding: 16px;
+                display: block;
+                align-items: center;
+                justify-content: space-between;
+                column-gap: 48px;
+                position: absolute;
+                top: 100%;
+                right: 0;
+                background-color: #fff;
+            }
+            &__list{
+                display: flex;
+                align-items: flex-start;
+                column-gap: 0px;
+                row-gap: 16px;
+                flex-direction: column;
+                &--item{
+                    font-family: InterMedium;
+                    font-size: 16px;
+                    &:hover{
+                        color: silver;
+                    }
+                }
+            }
+            &__btn{
+                display: flex;
+                align-items: flex-start;
+                flex-direction: column;
+                column-gap: 0px;
+               
+                &--list{
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    width: 100%;
+                    padding: 16px 0;
+                }
+                &--text{
+                    display: block;
+                    font-size: 16px;
+                    font-family: InterRegular;
+                }
+                &--dark{
+                    font-size: 20px;
+                    width: 36px;
+                    height: 36px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    cursor: pointer;
+                    border: 1px solid transparent;
+                    border-radius: 10px;
+                    &:hover{
+                        
+                        background-color: #ece7e7;
+                    }
+                }
+                &--download{
+                    font-family: InterMedium;
+                    font-size: 16px;
+                    color: white;
+                    width: 100%;
+                    height: 36px;
+                    background-color: black;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 16px;
+                    transition: all 0.3s ease;
+                    &:hover{
+                        background-color: transparent;
+                        color: #000;
+                        border: 1px solid #000;
+                    }
+                }
+            }
+            
+            .menu, .close-menu{
+                display: block;
+                font-size: 25px;
+                cursor: pointer;
+            }
+        }
+    }
+    
+
 }
