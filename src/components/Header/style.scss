@@ -185,13 +185,23 @@ header{
         // top: 0;
         // z-index: 99999;
         position: relative;
-        box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+       
         .nav{
             height: 68px;
             display: flex;
             justify-content: space-between;
             align-items: center;
-         
+           
+            &::after{
+                content: "";
+                width: 100%;
+                height: 1px;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                background-color: #F3F4F6;
+            }
+           
             &__logo{
                 font-family: BlackChancery;
                 font-size: 24px;
@@ -201,6 +211,7 @@ header{
             }
             &__link{
                 width: 100%;
+                height: calc(100vh - 68px);
                 padding: 16px;
                 display: block;
                 align-items: center;
@@ -208,8 +219,9 @@ header{
                 column-gap: 48px;
                 position: absolute;
                 top: 100%;
-                right: 0;
+                right: -100%;
                 background-color: #fff;
+                transition: all 0.3s ease;
             }
             &__list{
                 display: flex;
