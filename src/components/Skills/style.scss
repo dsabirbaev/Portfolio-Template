@@ -26,14 +26,15 @@
     &__cards{
         display: grid;
         grid-template-columns: repeat(8, minmax(0, 1fr));
+        row-gap: 20px;
     }
     &__card{
         width: 90px;
+        height: 121px;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        border: 1px solid red;
         img{
             margin-bottom: 10px;
         }

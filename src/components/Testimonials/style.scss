@@ -1,0 +1,72 @@
+
+
+
+.testimonials{
+    padding: 96px 0;
+    background-color: #F9FAFB;
+    &__title {
+        font-size: 14px;
+        font-family: InterMedium;
+        color: #4B5563;
+        border-radius: 12px;
+        padding: 4px 20px;
+        background-color: #E5E7EB;
+        width: fit-content;
+        margin: 0 auto;
+        margin-bottom: 16px;
+    }
+
+    &__text{
+        color: #4B5563;
+        font-size: 20px;
+        margin-bottom: 48px;
+        text-align: center;
+    }
+
+    &__cards{
+        display: flex;
+        
+        justify-content: space-between;
+        column-gap: 48px;
+    }
+    &__card{
+        border-radius: 12px;
+        padding: 48px;
+        max-width: 373px;
+        background-color: #fff;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        &:hover{
+            box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+        }
+        &--img{
+            width: 64px;
+            height: 64px;
+            border-radius: 100%;
+            background-color: #9CA3AF;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 24px;
+        }
+        &--body{
+            color: #4B5563;
+            line-height: 24px;
+            font-size: 16px;
+            margin-bottom: 24px;
+        }
+        &--name{
+            color: #111827;
+            font-size: 20px;
+            font-family: InterSemiBold;
+        }
+        &--position{
+            color: #4B5563;
+            font-size: 14px;
+
+        }
+    }
+}

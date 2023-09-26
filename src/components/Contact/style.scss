@@ -1,0 +1,78 @@
+
+
+
+.contact{
+    padding: 96px 0;
+    &__title {
+        font-size: 14px;
+        font-family: InterMedium;
+        color: #4B5563;
+        border-radius: 12px;
+        padding: 4px 20px;
+        background-color: #E5E7EB;
+        width: fit-content;
+        margin: 0 auto;
+        margin-bottom: 16px;
+    }
+
+    &__text{
+        color: #4B5563;
+        line-height: 28px;
+        font-size: 20px;
+        max-width: 576px;
+        margin: 0 auto;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    &__info{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        row-gap: 20px;
+        margin-bottom: 50px;
+        &--email, &--phone{
+
+            i{
+                font-size: 32px;
+            }
+            span{
+                color: #111827;
+                font-size: 36px;
+                font-family: InterSemiBold;
+                letter-spacing: -0.72px;
+                margin: 0 10px;
+            }
+        }
+    }
+
+    &__socials{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        row-gap: 8px;
+        &--text{
+            color: #4B5563;
+            font-size: 16px;
+        }
+        &--media{
+            display: flex;
+            column-gap: 10px;
+
+            i{
+                font-size: 20px;
+                transition: all 0.3s ease;
+            }
+            .github:hover{
+                color: #4B5563;
+            }
+            .twitter:hover{
+                color: #1DA1F2;
+            }
+            .figma:hover{
+                color: #ff0000d2;
+            }
+        }
+    }
+}

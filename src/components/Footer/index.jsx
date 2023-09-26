@@ -3,10 +3,10 @@ import "./style.scss";
 
 const index = () => {
     return (
-        <footer>
+        <footer className="footer">
             <div className="container">
-                <div>
-                    <p></p>
+                <div className="footer__inner">
+                    <p>&copy; 2023 | Designed and coded with ❤️️ by NAJOT TA’LIM</p>
                 </div>
             </div>
         </footer>

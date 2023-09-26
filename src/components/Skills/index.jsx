@@ -1,7 +1,7 @@
 
 import { skills } from "../../service/db";
 import "./style.scss";
-import git from "../../assets/icons/skills/git.svg";
+
 const index = () => {
     return (
         <section className="skills">
@@ -10,38 +10,15 @@ const index = () => {
                     <h4 className="skills__title">Skills</h4>
                     <p className="skills__text">The skills, tools and technologies I am really good at:</p>
                     <div className="skills__cards">
-                        <div className="skills__card">
-                            <img src={git} alt="git"/>
-                            <p>Git</p>
-                        </div>
-                        <div className="skills__card">
-                            <img src={git} alt="git"/>
-                            <p>Git</p>
-                        </div>
-                        <div className="skills__card">
-                            <img src={git} alt="git"/>
-                            <p>Git</p>
-                        </div>
-                        <div className="skills__card">
-                            <img src={git} alt="git"/>
-                            <p>Git</p>
-                        </div>
-                        <div className="skills__card">
-                            <img src={git} alt="git"/>
-                            <p>Git</p>
-                        </div>
-                        <div className="skills__card">
-                            <img src={git} alt="git"/>
-                            <p>Git</p>
-                        </div>
-                        <div className="skills__card">
-                            <img src={git} alt="git"/>
-                            <p>Git</p>
-                        </div>
-                        <div className="skills__card">
-                            <img src={git} alt="git"/>
-                            <p>Git</p>
-                        </div>
+                       {
+                        skills?.map((item) => {
+                            return <div key={item.id} className="skills__card">
+                                <img src={item?.img} alt={item?.title} />
+                                <p>{item?.title}</p>
+                            </div>
+                        })
+                       }
+                       
                     </div>
                     
                 </div>
