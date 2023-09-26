@@ -1,0 +1,67 @@
+
+
+
+.experience{
+    padding: 96px 0;
+    background-color: #F9FAFB;
+    &__title {
+        font-size: 14px;
+        font-family: InterMedium;
+        color: #4B5563;
+        border-radius: 12px;
+        padding: 4px 20px;
+        background-color: #E5E7EB;
+        width: fit-content;
+        margin: 0 auto;
+        margin-bottom: 16px;
+    }
+
+    &__text{
+        color: #4B5563;
+        font-size: 20px;
+        margin: 0 auto;
+        width: fit-content;
+        margin-bottom: 48px;
+    }
+
+    &__cards{
+        display: flex;
+        flex-direction: column;
+        row-gap: 48px;
+    }
+    &__card{
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        padding: 32px;
+        border-radius: 12px;
+        background-color: #fff;
+        box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.06), 0px 4px 3px 0px rgba(0, 0, 0, 0.07);
+        cursor: pointer;
+        transition: all 0.3s ease;
+        &:hover{
+            box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+        }
+        &--date{
+            font-size: 16px;
+        }
+        &--body{
+            max-width: 384px;
+            &-title{
+                color: #111827;
+                font-size: 20px;
+                font-family: InterSemiBold;
+                margin-bottom: 16px;
+            }
+            ul{
+                display: flex;
+                flex-direction: column;
+                row-gap: 10px;
+            }
+            ul li{
+                color: #4B5563;
+                font-size: 16px;
+            }
+        }
+    }
+}

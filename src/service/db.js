@@ -19,6 +19,10 @@ import laravel from "../assets/icons/skills/laravel.svg";
 import vue from "../assets/icons/skills/vue.svg";
 import nuxt from "../assets/icons/skills/nuxt.svg";
 import git from "../assets/icons/skills/git.svg";
+
+import uzum from "../assets/images/uzum.png";
+import najot from "../assets/images/najot.png";
+import itransition from "../assets/images/itransition.png";
 const skills = [
     {
         id: 1,
@@ -127,11 +131,39 @@ const testimonials = [{
 ];
 
 
+const experience = [
+    {
+        id: 1,
+        position: "Team Lead (Senior Software engineer)",
+        date: "May 2023 - Present",
+        body:["Lorem ipsum dolor sit amet, consectetur adipiscing elit", "Ut pretium arcu et massa semper, id fringilla leo semper.", "Sed quis justo ac magna.", "Lorem ipsum dolor sit amet, consectetur adipiscing elit."],
+        img: uzum
+    },
+    {
+        id: 2,
+        position: "Head Teacher & Tech Interviewer",
+        date: "Apr 2022 - Persen",
+        body:["Lorem ipsum dolor sit amet, consectetur adipiscing elit", "Ut pretium arcu et massa semper, id fringilla leo semper.", "Sed quis justo ac magna.", "Lorem ipsum dolor sit amet, consectetur adipiscing elit."],
+        img: najot
+    },
+    {
+        id: 3,
+        position: "Senior Software engineer",
+        date: "Jul 2021 - 2022 Oct",
+        body:["Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit."],
+        img: itransition
+    }
+
+];
+
+
+
 
 
 
 
 export {
     skills,
-    testimonials
+    testimonials,
+    experience
 };
