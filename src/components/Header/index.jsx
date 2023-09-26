@@ -41,9 +41,9 @@ const index = () => {
                     <div className="nav__link dark:bg-[#030712]" style={navLinkStyle}>
                         <ul className="nav__list dark:text-white">
                             <li onClick={() => setMenu(!menu)} className="nav__list--item"><a className="nav__list--item-link" href="#about">About</a></li>
-                            <li onClick={() => setMenu(!menu)} className="nav__list--item"><a className="nav__list--item-link" href="#">Work</a></li>
-                            <li onClick={() => setMenu(!menu)} className="nav__list--item"><a className="nav__list--item-link" href="#">Testimonials</a></li>
-                            <li onClick={() => setMenu(!menu)} className="nav__list--item"><a className="nav__list--item-link" href="#">Contact</a></li>
+                            <li onClick={() => setMenu(!menu)} className="nav__list--item"><a className="nav__list--item-link" href="#work">Work</a></li>
+                            <li onClick={() => setMenu(!menu)} className="nav__list--item"><a className="nav__list--item-link" href="#testimonials">Testimonials</a></li>
+                            <li onClick={() => setMenu(!menu)} className="nav__list--item"><a className="nav__list--item-link" href="#contact">Contact</a></li>
                         </ul>
                         <span className="nav__line">|</span>
                         <div className="nav__btn dark:text-white">
