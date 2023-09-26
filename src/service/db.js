@@ -23,6 +23,11 @@ import git from "../assets/icons/skills/git.svg";
 import uzum from "../assets/images/uzum.png";
 import najot from "../assets/images/najot.png";
 import itransition from "../assets/images/itransition.png";
+
+import uzumuz from "../assets/images/uzumuz.png";
+import uzumnasiya from "../assets/images/uzumnasiya.png";
+import cambly from "../assets/images/cambly.png";
+import link from "../assets/icons/link.svg";
 const skills = [
     {
         id: 1,
@@ -157,6 +162,32 @@ const experience = [
 ];
 
 
+const work = [
+    {
+        id: 1,
+        title: "Uzum.uz",
+        body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec urna ac tellus volutpat viverra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.",
+        tools: ["Vue.js", "Nuxt.js", "Typescript", "Nest.js", "PostgreSQL", "Tailwindcss", "Figma", "Cypress", "Navie.UI", "Git"],
+        img: uzumuz,
+        link: link
+    },
+    {
+        id: 2,
+        title: "Uzum nasiya",
+        body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec urna ac tellus volutpat viverra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.",
+        tools: ["Vue.js", "Nuxt.js", "Typescript", "Nest.js", "PostgreSQL", "Tailwindcss", "Figma", "Cypress", "Navie.UI", "Git"],
+        img: uzumnasiya,
+        link: link
+    },
+    {
+        id: 3,
+        title: "Cambly.com",
+        body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec urna ac tellus volutpat viverra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.",
+        tools: ["Vue.js", "Nuxt.js", "Typescript", "Nest.js", "PostgreSQL", "Tailwindcss", "Figma", "Cypress", "Navie.UI", "Git"],
+        img: cambly,
+        link: link
+    },
+]
 
 
 
@@ -165,5 +196,6 @@ const experience = [
 export {
     skills,
     testimonials,
-    experience
+    experience,
+    work
 };

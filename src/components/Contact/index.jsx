@@ -7,7 +7,7 @@ const index = () => {
         <section id="contact" className='contact'>
             <div className='container'>
                 <div className="contact__inner">
-                    <h4 className="contact__title">Skills</h4>
+                    <h4 className="contact__title">Get in touc</h4>
                     <p className="contact__text">Imom Buxoriy bobomizning “Al Jome as sahih” kitobining eng birinchi hadisi shu hadis bilan boshlangan: “Innamal a’malu bin niyyati” ya’ni, “Barcha amallar niyatga bog’liq”.</p>
                     <div className="contact__info">
                         <div className="contact__info--email">
