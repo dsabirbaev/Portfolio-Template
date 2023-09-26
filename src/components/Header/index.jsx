@@ -3,28 +3,18 @@ import "./style.scss";
 
 const index = () => {
     const [menu, setMenu] = useState(false);
-    const [dark, setDark] = useState(() => {
-        const storedDarkMode = localStorage.getItem('darkMode');
-        return storedDarkMode ? false : true;
-
-    });
+    const [dark, setDark] = useState(localStorage.getItem('darkMode') === 'true' || false);
     const navLinkStyle = menu ? { right: 0 } : {};
 
     const toggleDarkMode = () => {
-       
         setDark(!dark);
-        // document.documentElement.classList.toggle("dark");
-
     }
     useEffect(() => {
        
-        localStorage.setItem('darkMode', JSON.stringify(dark));
-        if (dark === true) {
-            document.documentElement.classList.add("dark");
-        } else {
-            document.documentElement.classList.remove("dark");
-        }
-    }, [dark]);
+        localStorage.setItem('darkMode', dark);
+        dark ?  document.documentElement.classList.add('dark') : document.documentElement.classList.remove('dark');
+        
+      }, [dark]);
 
     return (
         <header className="dark:bg-[#030712]">
