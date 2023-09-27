@@ -19,7 +19,7 @@ const index = () => {
                                         <ul>
                                             {
                                                 item?.body.map((item, index) => {
-                                                    return <li key={index} className="dark:text-white">
+                                                    return <li key={index} className="dark:text-white" >
                                                         {item}
                                                     </li>
                                                 })
