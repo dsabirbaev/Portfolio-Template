@@ -20,9 +20,9 @@ const index = () => {
                     <div className="contact__socials dark:text-white">
                         <p className="contact__socials--text dark:text-white">You may also find me on these platforms!</p>
                         <div className="contact__socials--media">
-                            <a href="#"><i className='bx bxl-github github'></i></a>
-                            <a href="#"><i className='bx bxl-twitter twitter'></i></a>
-                            <a href="#"><i className='bx bxl-figma figma'></i></a>
+                            <a href="https://github.com/dsabirbaev"><i className='bx bxl-github github'></i></a>
+                            <a href="https://twitter.com/sabirbaevD"><i className='bx bxl-twitter twitter'></i></a>
+                            <a href="https://www.figma.com/@davran"><i className='bx bxl-figma figma'></i></a>
                         </div>
                     </div>
                 </div>

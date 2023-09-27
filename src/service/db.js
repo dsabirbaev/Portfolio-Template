@@ -1,5 +1,5 @@
 import user from "../assets/icons/user.svg";
-
+import user2 from "../assets/images/user2.png";
 import js from "../assets/icons/skills/javscript.svg";
 import ts from "../assets/icons/skills/typescript.svg";
 import react from "../assets/icons/skills/react.svg";
@@ -124,7 +124,7 @@ const testimonials = [{
         body: "“Great guy, highly recommended for any COMPLEX front-end development job! His skills are top-notch and he will be an amazing addition to any team.”",
         fullName: "Djasur Djumaev",
         position: "Co-Founder - Uzum.uz",
-        img: user
+        img: user2
     },
     {
         id: 3,
