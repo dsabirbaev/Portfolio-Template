@@ -3,6 +3,7 @@ import { work } from "../../service/db";
 import "./style.scss"
 
 const index = () => {
+    
     return (
         <section id="work" className="work dark:bg-[#030712]">
             <div className="container">

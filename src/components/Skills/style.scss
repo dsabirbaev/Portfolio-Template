@@ -26,7 +26,7 @@
     &__cards{
         display: grid;
         grid-template-columns: repeat(8, minmax(0, 1fr));
-        row-gap: 20px;
+        gap: 20px;
     }
     &__card{
         width: 90px;
@@ -42,6 +42,154 @@
             font-size: 18px;
             color: #4B5563;
             text-align: center;
+        }
+    }
+}
+
+@media only screen and (max-width: 900px){
+    .skills{
+        padding: 96px 0;
+    
+    
+        &__title {
+            font-size: 14px;
+            font-family: InterMedium;
+            color: #4B5563;
+            border-radius: 12px;
+            padding: 4px 20px;
+            background-color: #E5E7EB;
+            width: fit-content;
+            margin: 0 auto;
+            margin-bottom: 16px;
+        }
+        &__text{
+            color: #4B5563;
+            font-size: 20px;
+            margin: 0 auto;
+            width: fit-content;
+            margin-bottom: 48px;
+        }
+    
+        &__cards{
+            display: grid;
+            grid-template-columns: repeat(auto-fill, 150px);
+            justify-content: center;
+            grid-gap: 20px;
+        }
+        &__card{
+            width: 90px;
+            height: 121px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            img{
+                margin-bottom: 10px;
+            }
+            p{
+                font-size: 18px;
+                color: #4B5563;
+                text-align: center;
+            }
+        }
+    }
+    
+}
+
+@media only screen and (max-width: 576px){
+    .skills{
+        padding: 64px 0;
+        &__title {
+            font-size: 14px;
+            font-family: InterMedium;
+            color: #4B5563;
+            border-radius: 12px;
+            padding: 4px 20px;
+            background-color: #E5E7EB;
+            width: fit-content;
+            margin: 0 auto;
+            margin-bottom: 16px;
+        }
+        &__text{
+            color: #4B5563;
+            font-size: 18px;
+            margin: 0 auto;
+            width: fit-content;
+            margin-bottom: 24px;
+        }
+    
+        &__cards{
+            display: flex;
+           
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 20px;
+            row-gap: 0px;
+        }
+        &__card{
+            width: 90px;
+            height: 121px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            img{
+                margin-bottom: 10px;
+            }
+            p{
+                font-size: 16px;
+                color: #4B5563;
+                text-align: center;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 375px){
+    .skills{
+        padding: 64px 0;
+        &__title {
+            font-size: 14px;
+            font-family: InterMedium;
+            color: #4B5563;
+            border-radius: 12px;
+            padding: 4px 20px;
+            background-color: #E5E7EB;
+            width: fit-content;
+            margin: 0 auto;
+            margin-bottom: 16px;
+        }
+        &__text{
+            color: #4B5563;
+            font-size: 18px;
+            margin: 0 auto;
+            width: fit-content;
+            margin-bottom: 24px;
+        }
+    
+        &__cards{
+            display: flex;
+           
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 18px;
+            row-gap: 0px;
+        }
+        &__card{
+            width: 64px;
+            height: 121px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            img{
+                margin-bottom: 10px;
+            }
+            p{
+                font-size: 16px;
+                color: #4B5563;
+                text-align: center;
+            }
         }
     }
 }

@@ -61,7 +61,379 @@
             ul li{
                 color: #4B5563;
                 font-size: 16px;
+                list-style: circle;
             }
         }
     }
+}
+
+
+@media only screen and (max-width: 800px){
+    .experience{
+        padding: 96px 0;
+        background-color: #F9FAFB;
+        &__title {
+            font-size: 14px;
+            font-family: InterMedium;
+            color: #4B5563;
+            border-radius: 12px;
+            padding: 4px 20px;
+            background-color: #E5E7EB;
+            width: fit-content;
+            margin: 0 auto;
+            margin-bottom: 16px;
+        }
+    
+        &__text{
+            color: #4B5563;
+            font-size: 20px;
+            margin: 0 auto;
+            width: fit-content;
+            margin-bottom: 48px;
+        }
+    
+        &__cards{
+            display: flex;
+            flex-direction: column;
+            row-gap: 40px;
+        }
+        &__card{
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            padding: 28px;
+            border-radius: 12px;
+            background-color: #fff;
+            box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.06), 0px 4px 3px 0px rgba(0, 0, 0, 0.07);
+            cursor: pointer;
+            transition: all 0.3s ease;
+            &:hover{
+                box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+            }
+            img{
+                width: 100px;
+            }
+            &--date{
+                font-size: 16px;
+            }
+            &--body{
+                max-width: 384px;
+                &-title{
+                    color: #111827;
+                    font-size: 20px;
+                    font-family: InterSemiBold;
+                    margin-bottom: 16px;
+                }
+                ul{
+                    display: flex;
+                    flex-direction: column;
+                    row-gap: 10px;
+                }
+                ul li{
+                    color: #4B5563;
+                    font-size: 16px;
+                    list-style: circle;
+                }
+            }
+        }
+    }
+    
+}
+
+@media only screen and (max-width: 769px){
+    .experience{
+        padding: 96px 0;
+        background-color: #F9FAFB;
+        &__title {
+            font-size: 14px;
+            font-family: InterMedium;
+            color: #4B5563;
+            border-radius: 12px;
+            padding: 4px 20px;
+            background-color: #E5E7EB;
+            width: fit-content;
+            margin: 0 auto;
+            margin-bottom: 16px;
+        }
+    
+        &__text{
+            color: #4B5563;
+            font-size: 20px;
+            margin: 0 auto;
+            width: fit-content;
+            margin-bottom: 48px;
+        }
+    
+        &__cards{
+            display: flex;
+            flex-direction: column;
+            row-gap: 40px;
+        }
+        &__card{
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            padding: 25px;
+            border-radius: 12px;
+            background-color: #fff;
+            box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.06), 0px 4px 3px 0px rgba(0, 0, 0, 0.07);
+            cursor: pointer;
+            transition: all 0.3s ease;
+            &:hover{
+                box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+            }
+            img{
+                width: 100px;
+            }
+            &--date{
+                font-size: 14px;
+            }
+            &--body{
+                max-width: 384px;
+                &-title{
+                    color: #111827;
+                    font-size: 18px;
+                    font-family: InterSemiBold;
+                    margin-bottom: 16px;
+                }
+                ul{
+                    display: flex;
+                    flex-direction: column;
+                    row-gap: 10px;
+                }
+                ul li{
+                    color: #4B5563;
+                    font-size: 14px;
+                    list-style: circle;
+                }
+            }
+        }
+    }
+    
+}
+
+@media only screen and (max-width: 720px){
+    .experience{
+        padding: 96px 0;
+        background-color: #F9FAFB;
+        &__title {
+            font-size: 14px;
+            font-family: InterMedium;
+            color: #4B5563;
+            border-radius: 12px;
+            padding: 4px 20px;
+            background-color: #E5E7EB;
+            width: fit-content;
+            margin: 0 auto;
+            margin-bottom: 16px;
+        }
+    
+        &__text{
+            color: #4B5563;
+            font-size: 20px;
+            margin: 0 auto;
+            width: fit-content;
+            margin-bottom: 48px;
+        }
+    
+        &__cards{
+            display: flex;
+            flex-direction: column;
+            row-gap: 40px;
+        }
+        &__card{
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            padding: 25px;
+            border-radius: 12px;
+            background-color: #fff;
+            box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.06), 0px 4px 3px 0px rgba(0, 0, 0, 0.07);
+            cursor: pointer;
+            transition: all 0.3s ease;
+            &:hover{
+                box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+            }
+            img{
+                width: 80px;
+            }
+            &--date{
+                font-size: 14px;
+            }
+            &--body{
+                max-width: 384px;
+                &-title{
+                    color: #111827;
+                    font-size: 14px;
+                    font-family: InterSemiBold;
+                    margin-bottom: 16px;
+                    text-align: center;
+                }
+                ul{
+                    display: flex;
+                    flex-direction: column;
+                    row-gap: 10px;
+                }
+                ul li{
+                    color: #4B5563;
+                    font-size: 14px;
+                    list-style: circle;
+                }
+            }
+        }
+    }
+    
+}
+
+@media only screen and (max-width: 576px){
+
+    .experience{
+        padding: 64px 0;
+        background-color: #F9FAFB;
+        &__title {
+            font-size: 14px;
+            font-family: InterMedium;
+            color: #4B5563;
+            border-radius: 12px;
+            padding: 4px 20px;
+            background-color: #E5E7EB;
+            width: fit-content;
+            margin: 0 auto;
+            margin-bottom: 16px;
+        }
+    
+        &__text{
+            color: #4B5563;
+            font-size: 18px;
+            margin: 0 auto;
+            width: fit-content;
+            margin-bottom: 24px;
+        }
+    
+        &__cards{
+            display: flex;
+            flex-direction: column;
+            row-gap: 24px;
+        }
+        &__card{
+            display: flex;
+            align-items: flex-start;
+            flex-direction: column;
+            row-gap: 16px;
+            padding: 32px;
+            border-radius: 12px;
+            background-color: #fff;
+            box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.06), 0px 4px 3px 0px rgba(0, 0, 0, 0.07);
+            cursor: pointer;
+            transition: all 0.3s ease;
+            &:hover{
+                box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+            }
+            img{
+                order: -1;
+            }
+            &--date{
+                order: -1;
+                font-size: 16px;
+            }
+            &--body{
+                max-width: 384px;
+                &-title{
+                    color: #111827;
+                    font-size: 20px;
+                    font-family: InterSemiBold;
+                    margin-bottom: 16px;
+                    text-align: left;
+                }
+                ul{
+                    display: flex;
+                    flex-direction: column;
+                    row-gap: 10px;
+                }
+                ul li{
+                    color: #4B5563;
+                    font-size: 16px;
+                    list-style: circle;
+                }
+            }
+        }
+    }
+     
+}
+
+
+@media only screen and (max-width: 320px){
+
+    .experience{
+        padding: 50px 0;
+        background-color: #F9FAFB;
+        &__title {
+            font-size: 14px;
+            font-family: InterMedium;
+            color: #4B5563;
+            border-radius: 12px;
+            padding: 4px 20px;
+            background-color: #E5E7EB;
+            width: fit-content;
+            margin: 0 auto;
+            margin-bottom: 16px;
+        }
+    
+        &__text{
+            color: #4B5563;
+            font-size: 18px;
+            margin: 0 auto;
+            width: fit-content;
+            margin-bottom: 24px;
+        }
+    
+        &__cards{
+            display: flex;
+            flex-direction: column;
+            row-gap: 24px;
+        }
+        &__card{
+            display: flex;
+            align-items: flex-start;
+            flex-direction: column;
+            row-gap: 16px;
+            padding: 25px;
+            border-radius: 12px;
+            background-color: #fff;
+            box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.06), 0px 4px 3px 0px rgba(0, 0, 0, 0.07);
+            cursor: pointer;
+            transition: all 0.3s ease;
+            &:hover{
+                box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+            }
+            img{
+                order: -1;
+                width: 100px;
+            }
+            &--date{
+                order: -1;
+                font-size: 14px;
+            }
+            &--body{
+                max-width: 384px;
+                &-title{
+                    color: #111827;
+                    font-size: 18px;
+                    font-family: InterSemiBold;
+                    margin-bottom: 16px;
+                }
+                ul{
+                    display: flex;
+                    flex-direction: column;
+                    row-gap: 10px;
+                }
+                ul li{
+                    color: #4B5563;
+                    font-size: 14px;
+                    list-style: circle;
+                }
+            }
+        }
+    }
+     
 }
