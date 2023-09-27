@@ -10,12 +10,17 @@ const index = () => {
         setDark(!dark);
     }
     useEffect(() => {
-       
         localStorage.setItem('darkMode', dark);
         dark ?  document.documentElement.classList.add('dark') : document.documentElement.classList.remove('dark');
         
-      }, [dark]);
+    }, [dark]);
 
+    if(menu){
+        document.body.style.overflowY = 'hidden';
+    }
+    if(!menu){
+        document.body.style.overflowY = 'auto';
+    }
     return (
         <header className="dark:bg-[#030712]">
             <div className="container">

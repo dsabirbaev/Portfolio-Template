@@ -128,7 +128,7 @@ const testimonials = [{
     },
     {
         id: 3,
-        body: "“Mukhriddin was extremely easy and pleasant to work with and he truly cares about the project being a success. Mukhriddin has a high level of knowledge and was able to work on my Full stack application without any issues.”",
+        body: "“Davranbek was extremely easy and pleasant to work with and he truly cares about the project being a success. Mukhriddin has a high level of knowledge and was able to work on my Full stack application without any issues.”",
         fullName: "Avaz Aminov",
         position: "PM - Solution Lab",
         img: user
