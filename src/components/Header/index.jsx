@@ -49,7 +49,7 @@ const index = () => {
 
                             </div>
 
-                            <a className="nav__btn--download dark:bg-gray-700 dark:hover:text-white" href="#">Download CV</a>
+                            <a className="nav__btn--download dark:bg-gray-700 dark:hover:text-white" href="https://docs.google.com/document/d/e/2PACX-1vTzG74q3SORduUDem127U23VhVcl3dCGPnPtn6W91roLSZ997H5PdRFnqlFo-og5-YNh3WPOLngQggc/pub">Download CV</a>
                         </div>
                     </div>
                 </nav>
